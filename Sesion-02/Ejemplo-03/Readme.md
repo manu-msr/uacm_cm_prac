@@ -1,20 +1,20 @@
-## Ciclos
+# Ciclos
 
-### OBJETIVO
+## OBJETIVO
 
-- Diferenciar entre los tipos de ciclos disponibles y utilizarlos según el caso
+- Diferenciar entre los tipos de ciclos disponibles y utilizarlos según el caso.
 
-#### REQUISITOS
+## REQUISITOS
 
 1. Tener una noción básica de ciclos en programación
 
-#### DESARROLLO
+## DESARROLLO
 
-##### For
+### For
 
-El ciclo **for** itera sobre todos los elementos de cualquier objeto que provee a un *iterator*, que son objetos que pueden recorrer secuencialmente sus elementos. Los rangos son un ejemplo.
+El ciclo **for** itera sobre todos los elementos de cualquier objeto que provea un *iterator*. Los iteradores son objetos que pueden recorrer secuencialmente sus elementos. Los rangos que vimos en la sesión 1 son un ejemplo.
 	
-El ejemplo mas práctico sería imprimir un rango de números del 1 al 5 con esete ciclo:
+El ejemplo mas práctico sería imprimir un rango de números del 1 al 5 con este ciclo:
 
 ```kotlin
 for (i in 1..5) {
@@ -73,13 +73,13 @@ Podemos iterar también sobre una lista:
     }
 ```
 
-los iterators cuentan con un método llamado *foreach* y es equivalente al anterior ciclo for:
+los iteradores además cuentan con un método llamado *foreach* y es equivalente al anterior ciclo for:
 
 ```kotlin
 nombres.forEach { println(it) }
 ```
 
-también podemos parar el ciclo cuando decidamos, por ejemplo:
+también podemos detener el ciclo cuando decidamos, por ejemplo:
 
 ```kotlin
  for (nombre in nombres){
@@ -91,12 +91,12 @@ también podemos parar el ciclo cuando decidamos, por ejemplo:
     }
 ```
 
-por supuesto el loop se detendrá al encontrar el nombre Link.
+por supuesto el ciclo se detendrá al encontrar el nombre Link.
 
 
-##### While
+### While
 
-Los ciclos while mantienen el ciclo hasta que la condición dentro de él se evalua a `false`:
+Los ciclos mientras mantienen el ciclo hasta que la condición dentro de él se evalua a `false`:
 
 ```kotlin
 var x = 20
@@ -106,8 +106,3 @@ while (x > 0) {
     x--
 }
 ```
-
-[`Atrás`](../Reto-02) | [`Siguiente`](../Reto-03)
-
-
-
